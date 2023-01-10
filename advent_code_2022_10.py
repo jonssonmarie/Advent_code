@@ -17,6 +17,7 @@ import pandas as pd
 input_data = pd.read_csv("input_data/input_day10", sep=" ", header=None, skipinitialspace=True,
                          index_col=False).rename(columns={0: 'instruction', 1: "value_V"})
 
+# part one
 values = [1]
 
 for idx, data in input_data.iterrows():
@@ -25,11 +26,21 @@ for idx, data in input_data.iterrows():
         values.append(int(data.value_V) + values[-1])
 
 
-print([x for x in range(20, 240, 40)])
-
 total = []
 
 for x in range(20, 240, 40):
     total.append(x * values[x-1])
 
 print("Answer day 10:", sum(total))
+
+
+# part two, modulus fick jag goggla
+for i in range(len(values)):
+    if abs((values[i] - i % 40)) <= 1:
+        print("#", end='')
+    else:
+        print(' ', end='')
+    if (i + 1) % 40 == 0:
+        print("\n", end='')
+    else:
+        print(' ', end='')
