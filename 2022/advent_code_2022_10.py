@@ -12,6 +12,7 @@ Find the signal strength during the 20th, 60th, 100th, 140th, 180th, and 220th c
 What is the sum of these six signal strengths?
 """
 
+
 import pandas as pd
 
 input_data = pd.read_csv("input_data/input_day10", sep=" ", header=None, skipinitialspace=True,
