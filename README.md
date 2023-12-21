@@ -1,3 +1,3 @@
-# Advent_code_2022
+# Advent_code
 
 ## code for fun
