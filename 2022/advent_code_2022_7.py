@@ -16,7 +16,7 @@ size_limit = 100000
 terminal_prompt = '$'
 cd_command = 'cd'
 root_dir = '/'
-move_up_one_dir = '..'
+move_up_one_dir = '../..'
 dir_label = 'dir'
 list_command = 'ls'
 
